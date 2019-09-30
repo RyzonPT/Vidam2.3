@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EstadoActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="Estado do equipamento X"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fd">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="316dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textfdfView35"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Estado Geral:"
+                            android:textColor="@color/colorAccent"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="395dp" />
+
+                        <TextView
+                            android:id="@+id/estadogeral"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="TextView"
+                            android:textColor="@color/colorAccent" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/dividfdser3"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_weight="5"
+                        android:background="?android:attr/listDivider"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tesdxtView35"
+                            android:layout_width="65dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Obs: "
+                            android:textColor="@color/colorAccent"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="395dp" />
+
+                        <TextView
+                            android:id="@+id/estadogeralobs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="fsdkjfsdkjfksdjfksdjfjsdklfjsdkljflsdjflksdjklfjdsklfjksdljfklsdjfkldsfjsdhfjhsdjkfhsdjkhfjksd"
+                            android:textColor="@color/colorAccent" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/divdasider"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_weight="10"
+                        android:background="?android:attr/listDivider"
+                        android:visibility="invisible" />
+
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="316dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textVidsdaew35"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Manutenibilidade:"
+                            android:textColor="@color/colorAccent"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="395dp" />
+
+                        <TextView
+                            android:id="@+id/manutenibilidade"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="TextView"
+                            android:textColor="@color/colorAccent" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/divider2"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_weight="5"
+                        android:background="?android:attr/listDivider"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textVdsaiew35"
+                            android:layout_width="65dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Obs: "
+                            android:textColor="@color/colorAccent"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="395dp" />
+
+                        <TextView
+                            android:id="@+id/manutenabilidadeobs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="fsdkjfsdkjfksdjfksdjfjsdklfjsdkljflsdjflksdjklfjdsklfjksdljfklsdjfkldsfjsdhfjhsdjkfhsdjkhfjksd"
+                            android:textColor="@color/colorAccent" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/dividdsder"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_weight="10"
+                        android:background="?android:attr/listDivider"
+                        android:visibility="invisible" />
+
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="316dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textVieaasw35"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Acessibilidade:"
+                            android:textColor="@color/colorAccent"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="395dp" />
+
+                        <TextView
+                            android:id="@+id/acessibilidade"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="TextView"
+                            android:textColor="@color/colorAccent" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/dividerfsa3"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_weight="5"
+                        android:background="?android:attr/listDivider"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView3dsa5"
+                            android:layout_width="65dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Obs: "
+                            android:textColor="@color/colorAccent"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="395dp" />
+
+                        <TextView
+                            android:id="@+id/acessibilidadeobs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="fsdkjfsdkjfksdjfksdjfjsdklfjsdkljflsdjflksdjklfjdsklfjksdljfklsdjfkldsfjsdhfjhsdjkfhsdjkhfjksd"
+                            android:textColor="@color/colorAccent" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/dividdsaer"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_weight="10"
+                        android:background="?android:attr/listDivider"
+                        android:visibility="invisible" />
+
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="316dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/fdsf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Elementos Auxilixares:"
+                            android:textColor="@color/colorAccent"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="395dp" />
+
+                        <TextView
+                            android:id="@+id/elementosaux"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="TextView"
+                            android:textColor="@color/colorAccent" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/dividedsadr3"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_weight="5"
+                        android:background="?android:attr/listDivider"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textVidsaddew35"
+                            android:layout_width="65dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Obs: "
+                            android:textColor="@color/colorAccent"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="395dp" />
+
+                        <TextView
+                            android:id="@+id/elementosauxobs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="fsdkjfsdkjfksdjfksdjfjsdklfjsdkljflsdjflksdjklfjdsklfjksdljfklsdjfkldsfjsdhfjhsdjkfhsdjkhfjksd"
+                            android:textColor="@color/colorAccent" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/diviaasder"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_weight="10"
+                        android:background="?android:attr/listDivider"
+                        android:visibility="invisible" />
+
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="316dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Ruidos Estranhos:"
+                            android:textColor="@color/colorAccent"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="395dp" />
+
+                        <TextView
+                            android:id="@+id/ruidosestranhos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="TextView"
+                            android:textColor="@color/colorAccent" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/divider3"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_weight="5"
+                        android:background="?android:attr/listDivider"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView35"
+                            android:layout_width="65dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Obs: "
+                            android:textColor="@color/colorAccent"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="395dp" />
+
+                        <TextView
+                            android:id="@+id/ruidosestranhosobs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="fsdkjfsdkjfksdjfksdjfjsdklfjsdkljflsdjflksdjklfjdsklfjksdljfklsdjfkldsfjsdhfjhsdjkfhsdjkhfjksd"
+                            android:textColor="@color/colorAccent" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_weight="10"
+                        android:background="?android:attr/listDivider"
+                        android:visibility="invisible" />
+
+
+                </LinearLayout>
+
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/fd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estado atualizado em:"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/estadoData"
+        app:layout_constraintStart_toStartOf="@+id/scrollView9" />
+
+    <TextView
+        android:id="@+id/estadoData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/fd"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ServicoActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/tituloText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="28dp"
+        android:text="Serviço Manutenção Ar Condicionado"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/RelatoriosButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:onClick="gotoTutorial"
+        android:text="Ver Intervenções"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView7" />
+
+    <ScrollView
+        android:id="@+id/scrollView7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="7dp"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/RelatoriosButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ordem de Trabalho:"
+
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="63dp" />
+
+            <TextView
+                android:id="@+id/OrdemText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Reparar o exaustor da cozinha da entrada e verificar o painel solar numero 2. Ter as placas laterias em atenção."
+                android:textColor="@color/colorAccent"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="100dp" />
+
+            <TextView
+                android:id="@+id/fdsfdss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:text="Componentes:"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/componentesB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ver Componentes" />
+
+            <TextView
+                android:id="@+id/fsdf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:text="Datas:"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dataPrevista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prevista:"
+                android:textColor="@color/colorAccent"
+                tools:layout_editor_absoluteX="10dp"
+                tools:layout_editor_absoluteY="144dp" />
+
+            <TextView
+                android:id="@+id/dataPrestacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prestação:"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/dataMarcacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Marcação:"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:text="Morada:"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/RuaText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rua:  Rua de Penas nº33"
+                android:textColor="@color/colorAccent"
+                tools:layout_editor_absoluteX="10dp"
+                tools:layout_editor_absoluteY="144dp" />
+
+            <TextView
+                android:id="@+id/LocalidadeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Localidade: Vila verde"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/CodigoPostalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Codigo Postal: 4723-432"
+                android:textColor="@color/colorAccent" />
+
+            <Button
+                android:id="@+id/mapButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="10dp"
+                android:text="Ir para" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cliente:"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nomeCliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@color/colorAccent" />
+
+            <Button
+                android:id="@+id/ClienteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Dados do Cliente" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
