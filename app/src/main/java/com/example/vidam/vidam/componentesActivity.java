@@ -24,6 +24,8 @@ import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.cepheuen.elegantnumberbutton.view.ElegantNumberButton;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -108,7 +110,7 @@ public class componentesActivity extends AppCompatActivity implements AdapterVie
 
     public void displayComponentes(ArrayList<Componente> comps){
         int index = 0;
-        for(Componente comp : comps){
+        for(final Componente comp : comps){
             TableRow tr = new TableRow(this);
 
             TextView nomeT = new TextView(this);
@@ -141,14 +143,51 @@ public class componentesActivity extends AppCompatActivity implements AdapterVie
                 }
             });
 
+            final TextView txtCount = new TextView(this);
+            ImageButton buttonInc= new ImageButton(this);
+            txtCount.setText("111");
+            ImageButton buttonDec= new ImageButton(this);
+            buttonInc.setImageResource(android.R.drawable.ic_input_add);
+            buttonDec.setImageResource(android.R.drawable.ic_delete);
+            LinearLayout lay = new LinearLayout(this);
+
+            buttonInc.setLayoutParams(new TableRow.LayoutParams(100, 105));
+            buttonDec.setLayoutParams(new TableRow.LayoutParams(100, 105));
+
+            lay.addView(buttonDec);
+            lay.addView(txtCount);
+            lay.addView(buttonInc);
+            tr.addView(lay);
+            buttonInc.setTag(comp);
+            buttonDec.setTag(comp);
+
+            buttonInc.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Componente comp = (Componente) v.getTag();
+                    comp.setQuantidade(comp.getQuantidade()+1);
+                    txtCount.setText(String.valueOf(comp.getQuantidade()));
+
+                }
+            });
+
+            buttonDec.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Componente comp = (Componente) v.getTag();
+                    comp.setQuantidade(comp.getQuantidade()-1);
+                    txtCount.setText(String.valueOf(comp.getQuantidade()));
+
+                }
+            });
 
 
-
+            /*
             Spinner spinner = new Spinner(this);
             spinner.setTag(comp);
             ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                    android.R.layout.simple_spinner_item,  getResources().getStringArray(R.array.quantidades));
-// Specify the layout to use when the list of choices appears
+            android.R.layout.simple_spinner_item,  getResources().getStringArray(R.array.quantidades));
+                                                        // Specify the layout to use when the list of choices appears
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
             spinner.setAdapter(adapter);
             if(!mode.equals("CREATE")) {
@@ -182,16 +221,16 @@ public class componentesActivity extends AppCompatActivity implements AdapterVie
                     // TODO Auto-generated method stub
 
                 }
-            });
+            });*/
             tr.setBackgroundDrawable(ContextCompat.getDrawable(this, R.drawable.border) );
             ImageButton apagarB = new ImageButton(this);
 
             if(mode.equals("READ"))
-                spinner.setEnabled(false);
+                //spinner.setEnabled(false);
             tr.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.MATCH_PARENT));
             tr.addView(nomeT);
             tr.setPadding(20,5,20,5);
-            tr.addView(spinner);
+            //tr.addView(spinner);
             if(mode.equals("EDIT")){
                 apagarB.setImageResource(android.R.drawable.ic_menu_delete);
                 apagarB.setTag(comp);
