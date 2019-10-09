@@ -10,7 +10,7 @@ public class Cliente implements Serializable {
     private char grau;
     private String obs;
     private String rua;
-    //kk
+    //kkffdsd
     private String localidade;
     private String codigoPostal;
     private Integer telemovel1;

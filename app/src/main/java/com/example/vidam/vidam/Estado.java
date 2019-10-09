@@ -14,7 +14,6 @@ public class Estado implements Serializable {
     private char manutenibilidade;
     private String manutenibilidadeObs;
     private char acessibilidade;
-    private String j;
     private String acessibilidadeObs;
     private char elementosAux;
     private String elementosAuxObs;
